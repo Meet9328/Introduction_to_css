@@ -1,0 +1,43 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+a:link {
+    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+a:active {
+    color: green;
+}
+
+p::first-line {
+    font-weight: bold;
+    color: navy;
+}
+
+h1::before,
+h2::before {
+    content: "★ ";
+    color: gold;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

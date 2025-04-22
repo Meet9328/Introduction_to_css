@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling list</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #f8f8f8;
+            padding: 20px;
+        }
+
+        ul,
+        ol {
+            list-style-type: none;
+            padding: 0%;
+        }
+
+        ul li::before{
+            content: ' \00BB';
+            color: blueviolet;
+            font-weight: bold;
+        }
+
+        ol li::before{
+            content: ' \21D2';  
+            color: brown;
+            font-weight: bold;
+        }
+
+        li{
+            color:darkgoldenrod;
+            font-style: italic;
+            margin: 5px 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>Unordered list</h2>
+    <ul>
+        <li>Hello Css 1</li>
+        <li>Hello Css 2</li>
+        <li>Hello Css 3</li>
+        <li>Hello Css 4</li>
+        <li>Hello Css 5</li>
+    </ul>
+
+    <h2>Ordered list</h2>
+    <ol>
+        <li>Hello World 1</li>
+        <li>Hello World 2</li>
+        <li>Hello World 3</li>
+        <li>Hello World 4</li>
+        <li>Hello World 5</li>
+    </ol>
+</body>
+
+</html>
